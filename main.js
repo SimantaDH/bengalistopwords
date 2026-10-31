@@ -803,8 +803,8 @@
       dept: 'Department of Humanities and Social Sciences',
       inst: 'Indian Institute of Technology (Indian School of Mines) Dhanbad',
       instShort: 'IIT (ISM) Dhanbad', place: 'Dhanbad',
-      url: 'https://simantadh.github.io/Bengali_Stop_Words/',
-      repo: 'https://github.com/SimantaDH/Bengali_Stop_Words'
+      url: 'https://simantadh.github.io/bengalistopwords/',
+      repo: 'https://github.com/SimantaDH/bengalistopwords'
     };
     var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     var MSHORT = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];

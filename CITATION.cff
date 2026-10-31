@@ -12,8 +12,8 @@ authors:
 version: "1.0"
 date-released: "2026-10-31"
 license: CC-BY-NC-4.0
-url: "https://simantadh.github.io/Bengali_Stop_Words/"
-repository-code: "https://github.com/SimantaDH/Bengali_Stop_Words"
+url: "https://simantadh.github.io/bengalistopwords/"
+repository-code: "https://github.com/SimantaDH/bengalistopwords"
 keywords:
   - Bengali
   - stop words
