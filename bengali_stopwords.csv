@@ -1,0 +1,318 @@
+roman,bengali,category_id,category,macro,gloss,register,register_label,note,length
+ami,আমি,p1,First-Person Pronouns,Pronominals,I,C,Standard colloquial (Cholito),,3
+amra,আমরা,p1,First-Person Pronouns,Pronominals,we,C,Standard colloquial (Cholito),,4
+amake,আমাকে,p1,First-Person Pronouns,Pronominals,me,C,Standard colloquial (Cholito),,5
+amader,আমাদের,p1,First-Person Pronouns,Pronominals,our; us,C,Standard colloquial (Cholito),,6
+amar,আমার,p1,First-Person Pronouns,Pronominals,my,C,Standard colloquial (Cholito),,4
+amay,আমায়,p1,First-Person Pronouns,Pronominals,me (short objective),C,Standard colloquial (Cholito),,4
+amadigoke,আমাদিগকে,p1,First-Person Pronouns,Pronominals,us (literary),S,Literary (Sadhu) / formal,,9
+amaderke,আমাদেরকে,p1,First-Person Pronouns,Pronominals,us,C,Standard colloquial (Cholito),,8
+tumi,তুমি,p2,Second-Person Pronouns,Pronominals,you (familiar),C,Standard colloquial (Cholito),,4
+tomra,তোমরা,p2,Second-Person Pronouns,Pronominals,you all (familiar),C,Standard colloquial (Cholito),,5
+tomake,তোমাকে,p2,Second-Person Pronouns,Pronominals,"you (familiar, objective)",C,Standard colloquial (Cholito),,6
+tomader,তোমাদের,p2,Second-Person Pronouns,Pronominals,"your (familiar, plural)",C,Standard colloquial (Cholito),,7
+tomar,তোমার,p2,Second-Person Pronouns,Pronominals,your (familiar),C,Standard colloquial (Cholito),,5
+tomay,তোমায়,p2,Second-Person Pronouns,Pronominals,you (short objective),C,Standard colloquial (Cholito),,5
+tomadigoke,তোমাদিগকে,p2,Second-Person Pronouns,Pronominals,you all (literary objective),S,Literary (Sadhu) / formal,,10
+tomaderke,তোমাদেরকে,p2,Second-Person Pronouns,Pronominals,you all (objective),C,Standard colloquial (Cholito),,9
+tui,তুই,p2,Second-Person Pronouns,Pronominals,you (intimate),C,Standard colloquial (Cholito),,3
+tora,তোরা,p2,Second-Person Pronouns,Pronominals,you all (intimate),C,Standard colloquial (Cholito),,4
+toke,তোকে,p2,Second-Person Pronouns,Pronominals,"you (intimate, objective)",C,Standard colloquial (Cholito),,4
+toder,তোদের,p2,Second-Person Pronouns,Pronominals,"your (intimate, plural)",C,Standard colloquial (Cholito),,5
+tor,তোর,p2,Second-Person Pronouns,Pronominals,your (intimate),C,Standard colloquial (Cholito),,3
+toderke,তোদেরকে,p2,Second-Person Pronouns,Pronominals,"you all (intimate, objective)",C,Standard colloquial (Cholito),,7
+apni,আপনি,p2,Second-Person Pronouns,Pronominals,you (formal),C,Standard colloquial (Cholito),,4
+apnara,আপনারা,p2,Second-Person Pronouns,Pronominals,you all (formal),C,Standard colloquial (Cholito),,6
+apnake,আপনাকে,p2,Second-Person Pronouns,Pronominals,"you (formal, objective)",C,Standard colloquial (Cholito),,6
+apnader,আপনাদের,p2,Second-Person Pronouns,Pronominals,"your (formal, plural)",C,Standard colloquial (Cholito),,7
+apnar,আপনার,p2,Second-Person Pronouns,Pronominals,your (formal),C,Standard colloquial (Cholito),,5
+apnadigoke,আপনাদিগকে,p2,Second-Person Pronouns,Pronominals,"you all (formal, literary)",S,Literary (Sadhu) / formal,,10
+apnaderke,আপনাদেরকে,p2,Second-Person Pronouns,Pronominals,"you all (formal, objective)",C,Standard colloquial (Cholito),,9
+se,সে,p3,Third-Person Pronouns,Pronominals,he / she,C,Standard colloquial (Cholito),,2
+tara,তারা,p3,Third-Person Pronouns,Pronominals,they,C,Standard colloquial (Cholito),,4
+take,তাকে,p3,Third-Person Pronouns,Pronominals,him / her,C,Standard colloquial (Cholito),,4
+tader,তাদের,p3,Third-Person Pronouns,Pronominals,their; them,C,Standard colloquial (Cholito),,5
+tar,তার,p3,Third-Person Pronouns,Pronominals,his / her,C,Standard colloquial (Cholito),,3
+tahar,তাহার,p3,Third-Person Pronouns,Pronominals,his / her (literary),S,Literary (Sadhu) / formal,,5
+tahake,তাহাকে,p3,Third-Person Pronouns,Pronominals,him / her (literary),S,Literary (Sadhu) / formal,,6
+tahader,তাহাদের,p3,Third-Person Pronouns,Pronominals,their (literary),S,Literary (Sadhu) / formal,,7
+taderke,তাদেরকে,p3,Third-Person Pronouns,Pronominals,them,C,Standard colloquial (Cholito),,7
+tini,তিনি,p3,Third-Person Pronouns,Pronominals,he / she (honorific),C,Standard colloquial (Cholito),,4
+tanra,তাঁরা,p3,Third-Person Pronouns,Pronominals,they (honorific),C,Standard colloquial (Cholito),,5
+tanke,তাঁকে,p3,Third-Person Pronouns,Pronominals,him / her (honorific),C,Standard colloquial (Cholito),,5
+tander,তাঁদের,p3,Third-Person Pronouns,Pronominals,their (honorific),C,Standard colloquial (Cholito),,6
+tanr,তাঁর,p3,Third-Person Pronouns,Pronominals,his / her (honorific),C,Standard colloquial (Cholito),,4
+tanderke,তাঁদেরকে,p3,Third-Person Pronouns,Pronominals,them (honorific),C,Standard colloquial (Cholito),,8
+era,এরা,pd,Proximal & Distal Pronouns,Pronominals,these people,C,Standard colloquial (Cholito),,3
+eke,একে,pd,Proximal & Distal Pronouns,Pronominals,him / her (near),C,Standard colloquial (Cholito),,3
+eder,এদের,pd,Proximal & Distal Pronouns,Pronominals,their (near),C,Standard colloquial (Cholito),,4
+er,এর,pd,Proximal & Distal Pronouns,Pronominals,his / her / its (near),C,Standard colloquial (Cholito),,2
+iha,ইহা,pd,Proximal & Distal Pronouns,Pronominals,this (literary),S,Literary (Sadhu) / formal,,3
+ihar,ইহার,pd,Proximal & Distal Pronouns,Pronominals,of this (literary),S,Literary (Sadhu) / formal,,4
+ihake,ইহাকে,pd,Proximal & Distal Pronouns,Pronominals,this one (literary objective),S,Literary (Sadhu) / formal,,5
+ihader,ইহাদের,pd,Proximal & Distal Pronouns,Pronominals,of these (literary),S,Literary (Sadhu) / formal,,6
+ederke,এদেরকে,pd,Proximal & Distal Pronouns,Pronominals,these people (objective),C,Standard colloquial (Cholito),,6
+ini,ইনি,pd,Proximal & Distal Pronouns,Pronominals,this person (honorific),C,Standard colloquial (Cholito),,3
+enra,এঁরা,pd,Proximal & Distal Pronouns,Pronominals,these people (honorific),C,Standard colloquial (Cholito),,4
+enke,এঁকে,pd,Proximal & Distal Pronouns,Pronominals,this person (honorific objective),C,Standard colloquial (Cholito),,4
+ender,এঁদের,pd,Proximal & Distal Pronouns,Pronominals,"their (near, honorific)",C,Standard colloquial (Cholito),,5
+enr,এঁর,pd,Proximal & Distal Pronouns,Pronominals,"his / her (near, honorific)",C,Standard colloquial (Cholito),,3
+enderke,এঁদেরকে,pd,Proximal & Distal Pronouns,Pronominals,"them (near, honorific)",C,Standard colloquial (Cholito),,7
+o,ও,pd,Proximal & Distal Pronouns,Pronominals,"he / she (far); also 'and, too'",C,Standard colloquial (Cholito),Ambiguous: also the conjunction and inclusive particle -o,1
+ora,ওরা,pd,Proximal & Distal Pronouns,Pronominals,those people,C,Standard colloquial (Cholito),,3
+oke,ওকে,pd,Proximal & Distal Pronouns,Pronominals,him / her (far),C,Standard colloquial (Cholito),,3
+oder,ওদের,pd,Proximal & Distal Pronouns,Pronominals,their (far),C,Standard colloquial (Cholito),,4
+or,ওর,pd,Proximal & Distal Pronouns,Pronominals,his / her (far),C,Standard colloquial (Cholito),,2
+uha,উহা,pd,Proximal & Distal Pronouns,Pronominals,that (literary),S,Literary (Sadhu) / formal,,3
+uhar,উহার,pd,Proximal & Distal Pronouns,Pronominals,of that (literary),S,Literary (Sadhu) / formal,,4
+uhake,উহাকে,pd,Proximal & Distal Pronouns,Pronominals,that one (literary objective),S,Literary (Sadhu) / formal,,5
+uhader,উহাদের,pd,Proximal & Distal Pronouns,Pronominals,of those (literary),S,Literary (Sadhu) / formal,,6
+oderke,ওদেরকে,pd,Proximal & Distal Pronouns,Pronominals,those people (objective),C,Standard colloquial (Cholito),,6
+uni,উনি,pd,Proximal & Distal Pronouns,Pronominals,that person (honorific),C,Standard colloquial (Cholito),,3
+unra,ওঁরা,pd,Proximal & Distal Pronouns,Pronominals,those people (honorific),C,Standard colloquial (Cholito),,4
+unke,ওঁকে,pd,Proximal & Distal Pronouns,Pronominals,that person (honorific objective),C,Standard colloquial (Cholito),,4
+under,ওঁদের,pd,Proximal & Distal Pronouns,Pronominals,"their (far, honorific)",C,Standard colloquial (Cholito),,5
+unr,ওঁর,pd,Proximal & Distal Pronouns,Pronominals,"his / her (far, honorific)",C,Standard colloquial (Cholito),,3
+underke,ওঁদেরকে,pd,Proximal & Distal Pronouns,Pronominals,"them (far, honorific)",C,Standard colloquial (Cholito),,7
+je,যে,rel,Relative Pronouns,Pronominals,who / that / which,C,Standard colloquial (Cholito),,2
+jara,যারা,rel,Relative Pronouns,Pronominals,those who,C,Standard colloquial (Cholito),,4
+jake,যাকে,rel,Relative Pronouns,Pronominals,whom,C,Standard colloquial (Cholito),,4
+jader,যাদের,rel,Relative Pronouns,Pronominals,whose (plural),C,Standard colloquial (Cholito),,5
+jar,যার,rel,Relative Pronouns,Pronominals,whose,C,Standard colloquial (Cholito),,3
+jaha,যাহা,rel,Relative Pronouns,Pronominals,that which (literary),S,Literary (Sadhu) / formal,,4
+jahar,যাহার,rel,Relative Pronouns,Pronominals,whose (literary),S,Literary (Sadhu) / formal,,5
+jahake,যাহাকে,rel,Relative Pronouns,Pronominals,whom (literary),S,Literary (Sadhu) / formal,,6
+jahader,যাহাদের,rel,Relative Pronouns,Pronominals,"whose, plural (literary)",S,Literary (Sadhu) / formal,,7
+jaderke,যাদেরকে,rel,Relative Pronouns,Pronominals,those whom,C,Standard colloquial (Cholito),,7
+jini,যিনি,rel,Relative Pronouns,Pronominals,who (honorific),C,Standard colloquial (Cholito),,4
+janra,যাঁরা,rel,Relative Pronouns,Pronominals,those who (honorific),C,Standard colloquial (Cholito),,5
+janke,যাঁকে,rel,Relative Pronouns,Pronominals,whom (honorific),C,Standard colloquial (Cholito),,5
+jander,যাঁদের,rel,Relative Pronouns,Pronominals,whose (honorific plural),C,Standard colloquial (Cholito),,6
+janr,যাঁর,rel,Relative Pronouns,Pronominals,whose (honorific),C,Standard colloquial (Cholito),,4
+janderke,যাঁদেরকে,rel,Relative Pronouns,Pronominals,those whom (honorific),C,Standard colloquial (Cholito),,8
+ei,এই,dem,Demonstratives & Classifier Forms,Pronominals,this,C,Standard colloquial (Cholito),,2
+oi,ওই,dem,Demonstratives & Classifier Forms,Pronominals,that,C,Standard colloquial (Cholito),,2
+sei,সেই,dem,Demonstratives & Classifier Forms,Pronominals,"that (same, aforementioned)",C,Standard colloquial (Cholito),,3
+ki,কি,int,Interrogatives,Pronominals,yes/no question particle,C,Standard colloquial (Cholito),Spelling contrast with kee (কী) is functional in standard Bengali,2
+kee,কী,int,Interrogatives,Pronominals,what,C,Standard colloquial (Cholito),,3
+ke,কে,int,Interrogatives,Pronominals,who,C,Standard colloquial (Cholito),,2
+kara,কারা,int,Interrogatives,Pronominals,who (plural),C,Standard colloquial (Cholito),,4
+kake,কাকে,int,Interrogatives,Pronominals,whom,C,Standard colloquial (Cholito),,4
+kader,কাদের,int,Interrogatives,Pronominals,whose (plural),C,Standard colloquial (Cholito),,5
+kar,কার,int,Interrogatives,Pronominals,whose,C,Standard colloquial (Cholito),,3
+kaderke,কাদেরকে,int,Interrogatives,Pronominals,whom (plural),C,Standard colloquial (Cholito),,7
+keno,কেন,int,Interrogatives,Pronominals,why,C,Standard colloquial (Cholito),,4
+kobe,কবে,int,Interrogatives,Pronominals,when (which day),C,Standard colloquial (Cholito),,4
+kothay,কোথায়,int,Interrogatives,Pronominals,where,C,Standard colloquial (Cholito),,6
+kibhabe,কীভাবে,int,Interrogatives,Pronominals,how,C,Standard colloquial (Cholito),,7
+koto,কত,int,Interrogatives,Pronominals,how much / how many,C,Standard colloquial (Cholito),,4
+kon,কোন,int,Interrogatives,Pronominals,which,C,Standard colloquial (Cholito),,3
+konti,কোনটি,int,Interrogatives,Pronominals,which one,C,Standard colloquial (Cholito),,5
+kamne,কেমনে,int,Interrogatives,Pronominals,how (colloquial),R,Regional / informal,"Spoken, chiefly eastern variant of kibhabe",5
+koy,কয়,int,Interrogatives,Pronominals,how many (colloquial),R,Regional / informal,,3
+ebong,এবং,conj,Conjunctions & Connectives,Relational Words,and,C,Standard colloquial (Cholito),,5
+ar,আর,conj,Conjunctions & Connectives,Relational Words,and; more,C,Standard colloquial (Cholito),,2
+ba,বা,conj,Conjunctions & Connectives,Relational Words,or,C,Standard colloquial (Cholito),,2
+athaba,অথবা,conj,Conjunctions & Connectives,Relational Words,or (formal),C,Standard colloquial (Cholito),,6
+kintu,কিন্তু,conj,Conjunctions & Connectives,Relational Words,but,C,Standard colloquial (Cholito),,5
+tobe,তবে,conj,Conjunctions & Connectives,Relational Words,however; then,C,Standard colloquial (Cholito),,4
+karon,কারণ,conj,Conjunctions & Connectives,Relational Words,because,C,Standard colloquial (Cholito),,5
+jodi,যদি,conj,Conjunctions & Connectives,Relational Words,if,C,Standard colloquial (Cholito),,4
+tahole,তাহলে,conj,Conjunctions & Connectives,Relational Words,then; in that case,C,Standard colloquial (Cholito),,6
+jate,যাতে,conj,Conjunctions & Connectives,Relational Words,so that,C,Standard colloquial (Cholito),,4
+jodio,যদিও,conj,Conjunctions & Connectives,Relational Words,although,C,Standard colloquial (Cholito),,5
+tobu,তবু,conj,Conjunctions & Connectives,Relational Words,yet; still,C,Standard colloquial (Cholito),,4
+tobuo,তবুও,conj,Conjunctions & Connectives,Relational Words,even so,C,Standard colloquial (Cholito),,5
+kiba,কিবা,conj,Conjunctions & Connectives,Relational Words,or (literary),S,Literary (Sadhu) / formal,,4
+noba,,conj,Conjunctions & Connectives,Relational Words,uncertain,C,Standard colloquial (Cholito),Form not attested in standard dictionaries; please verify the intended word,4
+nocheth,নচেৎ,conj,Conjunctions & Connectives,Relational Words,otherwise (literary),S,Literary (Sadhu) / formal,,7
+tathapi,তথাপি,conj,Conjunctions & Connectives,Relational Words,nevertheless (literary),S,Literary (Sadhu) / formal,,7
+kimbha,কিংবা,conj,Conjunctions & Connectives,Relational Words,or,C,Standard colloquial (Cholito),Usually romanised kimba,6
+jeno,যেন,conj,Conjunctions & Connectives,Relational Words,as if; so that,C,Standard colloquial (Cholito),,4
+sutorang,সুতরাং,conj,Conjunctions & Connectives,Relational Words,therefore,C,Standard colloquial (Cholito),,8
+tai,তাই,conj,Conjunctions & Connectives,Relational Words,so; that is why,C,Standard colloquial (Cholito),,3
+nahole,নাহলে,conj,Conjunctions & Connectives,Relational Words,otherwise,C,Standard colloquial (Cholito),,6
+noyto,নয়তো,conj,Conjunctions & Connectives,Relational Words,or else,C,Standard colloquial (Cholito),,5
+kenona,কেননা,conj,Conjunctions & Connectives,Relational Words,because,C,Standard colloquial (Cholito),,6
+jehetu,যেহেতু,conj,Conjunctions & Connectives,Relational Words,since,C,Standard colloquial (Cholito),,6
+sehetu,সেহেতু,conj,Conjunctions & Connectives,Relational Words,hence,C,Standard colloquial (Cholito),,6
+tarpor,তারপর,conj,Conjunctions & Connectives,Relational Words,after that,C,Standard colloquial (Cholito),,6
+tarpore,তারপরে,conj,Conjunctions & Connectives,Relational Words,after that,C,Standard colloquial (Cholito),,7
+kachhe,কাছে,post,Postpositions & Case Markers,Relational Words,near; to,C,Standard colloquial (Cholito),,6
+theke,থেকে,post,Postpositions & Case Markers,Relational Words,from,C,Standard colloquial (Cholito),,5
+hote,হতে,post,Postpositions & Case Markers,Relational Words,from (literary),S,Literary (Sadhu) / formal,,4
+cheye,চেয়ে,post,Postpositions & Case Markers,Relational Words,than,C,Standard colloquial (Cholito),,5
+dara,দ্বারা,post,Postpositions & Case Markers,Relational Words,by (agent),C,Standard colloquial (Cholito),,4
+diye,দিয়ে,post,Postpositions & Case Markers,Relational Words,with; by means of,C,Standard colloquial (Cholito),,4
+kortrik,কর্তৃক,post,Postpositions & Case Markers,Relational Words,by (formal agent),S,Literary (Sadhu) / formal,,7
+sathe,সাথে,post,Postpositions & Case Markers,Relational Words,with,C,Standard colloquial (Cholito),,5
+sange,সঙ্গে,post,Postpositions & Case Markers,Relational Words,with,C,Standard colloquial (Cholito),,5
+majhe,মাঝে,post,Postpositions & Case Markers,Relational Words,among; in the middle,C,Standard colloquial (Cholito),,5
+modhye,মধ্যে,post,Postpositions & Case Markers,Relational Words,within; among,C,Standard colloquial (Cholito),,6
+upore,উপরে,post,Postpositions & Case Markers,Relational Words,above; on,C,Standard colloquial (Cholito),,5
+niche,নিচে,post,Postpositions & Case Markers,Relational Words,below,C,Standard colloquial (Cholito),,5
+pashe,পাশে,post,Postpositions & Case Markers,Relational Words,beside,C,Standard colloquial (Cholito),,5
+samne,সামনে,post,Postpositions & Case Markers,Relational Words,in front of,C,Standard colloquial (Cholito),,5
+pichhone,পিছনে,post,Postpositions & Case Markers,Relational Words,behind,C,Standard colloquial (Cholito),,8
+jonno,জন্য,post,Postpositions & Case Markers,Relational Words,for,C,Standard colloquial (Cholito),,5
+dik,দিক,post,Postpositions & Case Markers,Relational Words,direction; side,C,Standard colloquial (Cholito),,3
+dike,দিকে,post,Postpositions & Case Markers,Relational Words,towards,C,Standard colloquial (Cholito),,4
+bhitore,ভিতরে,post,Postpositions & Case Markers,Relational Words,inside,C,Standard colloquial (Cholito),,7
+baire,বাইরে,post,Postpositions & Case Markers,Relational Words,outside,C,Standard colloquial (Cholito),,5
+chhara,ছাড়া,post,Postpositions & Case Markers,Relational Words,except; without,C,Standard colloquial (Cholito),,6
+obdhi,অবধি,post,Postpositions & Case Markers,Relational Words,until; up to,C,Standard colloquial (Cholito),,5
+porjonto,পর্যন্ত,post,Postpositions & Case Markers,Relational Words,up to; until,C,Standard colloquial (Cholito),,8
+bina,বিনা,post,Postpositions & Case Markers,Relational Words,without,C,Standard colloquial (Cholito),,4
+proti,প্রতি,post,Postpositions & Case Markers,Relational Words,per; towards,C,Standard colloquial (Cholito),,5
+karone,কারণে,post,Postpositions & Case Markers,Relational Words,because of,C,Standard colloquial (Cholito),,6
+moto,মতো,post,Postpositions & Case Markers,Relational Words,like,C,Standard colloquial (Cholito),,4
+hishebe,হিসেবে,post,Postpositions & Case Markers,Relational Words,as; in the capacity of,C,Standard colloquial (Cholito),,7
+bishoye,বিষয়ে,post,Postpositions & Case Markers,Relational Words,regarding,C,Standard colloquial (Cholito),,7
+shomporke,সম্পর্কে,post,Postpositions & Case Markers,Relational Words,about,C,Standard colloquial (Cholito),,9
+ekhane,এখানে,spa,Spatial Deictics,Adverbials,here,C,Standard colloquial (Cholito),,6
+okhane,ওখানে,spa,Spatial Deictics,Adverbials,there,C,Standard colloquial (Cholito),,6
+sekhane,সেখানে,spa,Spatial Deictics,Adverbials,there (that place),C,Standard colloquial (Cholito),,7
+jekhane,যেখানে,spa,Spatial Deictics,Adverbials,where (relative),C,Standard colloquial (Cholito),,7
+kothao,কোথাও,spa,Spatial Deictics,Adverbials,somewhere; anywhere,C,Standard colloquial (Cholito),,6
+aaj,আজ,tmp,Temporal Adverbs,Adverbials,today,C,Standard colloquial (Cholito),,3
+kal,কাল,tmp,Temporal Adverbs,Adverbials,yesterday / tomorrow,C,Standard colloquial (Cholito),Ambiguous: tense of the verb decides past or future,3
+gotokal,গতকাল,tmp,Temporal Adverbs,Adverbials,yesterday,C,Standard colloquial (Cholito),,7
+agami,আগামী,tmp,Temporal Adverbs,Adverbials,next; coming,C,Standard colloquial (Cholito),,5
+ekhon,এখন,tmp,Temporal Adverbs,Adverbials,now,C,Standard colloquial (Cholito),,5
+tokhon,তখন,tmp,Temporal Adverbs,Adverbials,then,C,Standard colloquial (Cholito),,6
+kokhono,কখনো,tmp,Temporal Adverbs,Adverbials,ever; sometimes,C,Standard colloquial (Cholito),,7
+jokhon,যখন,tmp,Temporal Adverbs,Adverbials,when (relative),C,Standard colloquial (Cholito),,6
+sada,সদা,tmp,Temporal Adverbs,Adverbials,always (literary),S,Literary (Sadhu) / formal,,4
+sorboda,সর্বদা,tmp,Temporal Adverbs,Adverbials,always,S,Literary (Sadhu) / formal,,7
+abar,আবার,tmp,Temporal Adverbs,Adverbials,again,C,Standard colloquial (Cholito),,4
+pore,পরে,tmp,Temporal Adverbs,Adverbials,later; after,C,Standard colloquial (Cholito),,4
+age,আগে,tmp,Temporal Adverbs,Adverbials,before,C,Standard colloquial (Cholito),,3
+nityo,নিত্য,tmp,Temporal Adverbs,Adverbials,daily; always (literary),S,Literary (Sadhu) / formal,,5
+praishoy,প্রায়শই,tmp,Temporal Adverbs,Adverbials,often,C,Standard colloquial (Cholito),,8
+roj,রোজ,tmp,Temporal Adverbs,Adverbials,every day,C,Standard colloquial (Cholito),,3
+kakhono,কখনও,tmp,Temporal Adverbs,Adverbials,ever (variant),C,Standard colloquial (Cholito),Spelling variant of kokhono,7
+sathe sathe,সাথে সাথে,tmp,Temporal Adverbs,Adverbials,immediately,C,Standard colloquial (Cholito),Multi-word entry; needs bigram matching,10
+ajkal,আজকাল,tmp,Temporal Adverbs,Adverbials,nowadays,C,Standard colloquial (Cholito),,5
+ekhono,এখনো,tmp,Temporal Adverbs,Adverbials,still; yet,C,Standard colloquial (Cholito),,6
+ebar,এবার,tmp,Temporal Adverbs,Adverbials,this time; now,C,Standard colloquial (Cholito),,4
+jotokhon,যতক্ষণ,tmp,Temporal Adverbs,Adverbials,as long as,C,Standard colloquial (Cholito),,8
+totokhon,ততক্ষণ,tmp,Temporal Adverbs,Adverbials,for that long,C,Standard colloquial (Cholito),,8
+konodin,কোনোদিন,tmp,Temporal Adverbs,Adverbials,ever; some day,C,Standard colloquial (Cholito),,7
+prothome,প্রথমে,tmp,Temporal Adverbs,Adverbials,at first,C,Standard colloquial (Cholito),,8
+shese,শেষে,tmp,Temporal Adverbs,Adverbials,at last,C,Standard colloquial (Cholito),,5
+ager,আগের,tmp,Temporal Adverbs,Adverbials,previous,C,Standard colloquial (Cholito),,4
+porer,পরের,tmp,Temporal Adverbs,Adverbials,next; following,C,Standard colloquial (Cholito),,5
+ek,এক,qnt,Quantifiers & Indefinites,Adverbials,one; a,C,Standard colloquial (Cholito),,2
+anek,অনেক,qnt,Quantifiers & Indefinites,Adverbials,many; much,C,Standard colloquial (Cholito),,4
+kichu,কিছু,qnt,Quantifiers & Indefinites,Adverbials,some; something,C,Standard colloquial (Cholito),,5
+sob,সব,qnt,Quantifiers & Indefinites,Adverbials,all,C,Standard colloquial (Cholito),,3
+shobai,সবাই,qnt,Quantifiers & Indefinites,Adverbials,everyone,C,Standard colloquial (Cholito),,6
+protyek,প্রত্যেক,qnt,Quantifiers & Indefinites,Adverbials,each,C,Standard colloquial (Cholito),,7
+kono,কোনো,qnt,Quantifiers & Indefinites,Adverbials,any,C,Standard colloquial (Cholito),,4
+keu,কেউ,qnt,Quantifiers & Indefinites,Adverbials,someone; anyone,C,Standard colloquial (Cholito),,3
+aro,আরও,qnt,Quantifiers & Indefinites,Adverbials,more,C,Standard colloquial (Cholito),,3
+onno,অন্য,qnt,Quantifiers & Indefinites,Adverbials,other,C,Standard colloquial (Cholito),,4
+onnya,অন্য,qnt,Quantifiers & Indefinites,Adverbials,other (variant),C,Standard colloquial (Cholito),Same Bengali word as onno; only the romanisation differs,5
+sobkichu,সবকিছু,qnt,Quantifiers & Indefinites,Adverbials,everything,C,Standard colloquial (Cholito),,8
+kom,কম,qnt,Quantifiers & Indefinites,Adverbials,less,C,Standard colloquial (Cholito),,3
+beshi,বেশি,qnt,Quantifiers & Indefinites,Adverbials,more; too much,C,Standard colloquial (Cholito),,5
+jothto,যথেষ্ট,qnt,Quantifiers & Indefinites,Adverbials,enough (variant),C,Standard colloquial (Cholito),Probably a variant spelling of jothesto; please verify,6
+poriman,পরিমাণ,qnt,Quantifiers & Indefinites,Adverbials,amount,C,Standard colloquial (Cholito),,7
+koyek,কয়েক,qnt,Quantifiers & Indefinites,Adverbials,a few,C,Standard colloquial (Cholito),,5
+mot,মোট,qnt,Quantifiers & Indefinites,Adverbials,total,C,Standard colloquial (Cholito),,3
+ektu,একটু,qnt,Quantifiers & Indefinites,Adverbials,a little,C,Standard colloquial (Cholito),,4
+jothesto,যথেষ্ট,qnt,Quantifiers & Indefinites,Adverbials,enough,C,Standard colloquial (Cholito),,8
+joto,যত,qnt,Quantifiers & Indefinites,Adverbials,as much as,C,Standard colloquial (Cholito),,4
+toto,তত,qnt,Quantifiers & Indefinites,Adverbials,that much,C,Standard colloquial (Cholito),,4
+kauke,কাউকে,qnt,Quantifiers & Indefinites,Adverbials,someone (objective),C,Standard colloquial (Cholito),,5
+karo,কারও,qnt,Quantifiers & Indefinites,Adverbials,someone's,C,Standard colloquial (Cholito),,4
+erup,এরূপ,adv,"Manner, Degree & Discourse Adverbs",Adverbials,such; like this (literary),S,Literary (Sadhu) / formal,,4
+orup,ওরূপ,adv,"Manner, Degree & Discourse Adverbs",Adverbials,such; like that (literary),S,Literary (Sadhu) / formal,,4
+jemon,যেমন,adv,"Manner, Degree & Discourse Adverbs",Adverbials,as; for example,C,Standard colloquial (Cholito),,5
+temon,তেমন,adv,"Manner, Degree & Discourse Adverbs",Adverbials,so; that kind of,C,Standard colloquial (Cholito),,5
+emon,এমন,adv,"Manner, Degree & Discourse Adverbs",Adverbials,such,C,Standard colloquial (Cholito),,4
+kemon,কেমন,int,Interrogatives,Pronominals,how (in what manner),C,Standard colloquial (Cholito),,5
+sotti,সত্যি,adv,"Manner, Degree & Discourse Adverbs",Adverbials,really; truly,C,Standard colloquial (Cholito),,5
+asole,আসলে,adv,"Manner, Degree & Discourse Adverbs",Adverbials,actually,C,Standard colloquial (Cholito),,5
+bastobe,বাস্তবে,adv,"Manner, Degree & Discourse Adverbs",Adverbials,in reality,C,Standard colloquial (Cholito),,7
+nihat,নেহাত,adv,"Manner, Degree & Discourse Adverbs",Adverbials,merely; simply,C,Standard colloquial (Cholito),Usually romanised nehat,5
+khub,খুব,adv,"Manner, Degree & Discourse Adverbs",Adverbials,very,C,Standard colloquial (Cholito),,4
+otyoonto,অত্যন্ত,adv,"Manner, Degree & Discourse Adverbs",Adverbials,extremely,C,Standard colloquial (Cholito),,8
+pray,প্রায়,adv,"Manner, Degree & Discourse Adverbs",Adverbials,almost,C,Standard colloquial (Cholito),,4
+sudhu,শুধু,adv,"Manner, Degree & Discourse Adverbs",Adverbials,only,C,Standard colloquial (Cholito),,5
+kebal,কেবল,adv,"Manner, Degree & Discourse Adverbs",Adverbials,only; merely,C,Standard colloquial (Cholito),,5
+matro,মাত্র,adv,"Manner, Degree & Discourse Adverbs",Adverbials,only; just,C,Standard colloquial (Cholito),,5
+emonki,এমনকি,adv,"Manner, Degree & Discourse Adverbs",Adverbials,even,C,Standard colloquial (Cholito),,6
+nischoy,নিশ্চয়,adv,"Manner, Degree & Discourse Adverbs",Adverbials,surely,C,Standard colloquial (Cholito),,7
+botey,বটে,adv,"Manner, Degree & Discourse Adverbs",Adverbials,indeed (concessive),C,Standard colloquial (Cholito),,5
+hoyto,হয়তো,adv,"Manner, Degree & Discourse Adverbs",Adverbials,perhaps,C,Standard colloquial (Cholito),,5
+bodhoy,বোধহয়,adv,"Manner, Degree & Discourse Adverbs",Adverbials,probably,C,Standard colloquial (Cholito),,6
+thik,ঠিক,adv,"Manner, Degree & Discourse Adverbs",Adverbials,exactly; right,C,Standard colloquial (Cholito),,4
+bhabe,ভাবে,adv,"Manner, Degree & Discourse Adverbs",Adverbials,in a manner,C,Standard colloquial (Cholito),,5
+rokom,রকম,adv,"Manner, Degree & Discourse Adverbs",Adverbials,kind; sort,C,Standard colloquial (Cholito),,5
+nijer,নিজের,refl,"Reflexive, Reciprocal & Emphatic Forms",Pronominals,one's own,C,Standard colloquial (Cholito),,5
+nije,নিজে,refl,"Reflexive, Reciprocal & Emphatic Forms",Pronominals,oneself,C,Standard colloquial (Cholito),,4
+nijeder,নিজেদের,refl,"Reflexive, Reciprocal & Emphatic Forms",Pronominals,their own,C,Standard colloquial (Cholito),,7
+aposh,আপস,refl,"Reflexive, Reciprocal & Emphatic Forms",Pronominals,"mutual (as in aposhe, among themselves)",C,Standard colloquial (Cholito),Uncertain: may stand for আপসে (among themselves); please verify,5
+apnio,আপনিও,refl,"Reflexive, Reciprocal & Emphatic Forms",Pronominals,you too (formal),C,Standard colloquial (Cholito),,5
+tumio,তুমিও,refl,"Reflexive, Reciprocal & Emphatic Forms",Pronominals,you too (familiar),C,Standard colloquial (Cholito),,5
+amio,আমিও,refl,"Reflexive, Reciprocal & Emphatic Forms",Pronominals,I too,C,Standard colloquial (Cholito),,4
+ekti,একটি,dem,Demonstratives & Classifier Forms,Pronominals,one (with classifier -ti),C,Standard colloquial (Cholito),,4
+duti,দুটি,dem,Demonstratives & Classifier Forms,Pronominals,two (with classifier -ti),C,Standard colloquial (Cholito),,4
+koyekti,কয়েকটি,dem,Demonstratives & Classifier Forms,Pronominals,a few (with -ti),C,Standard colloquial (Cholito),,7
+eta,এটা,dem,Demonstratives & Classifier Forms,Pronominals,this one,C,Standard colloquial (Cholito),,3
+ota,ওটা,dem,Demonstratives & Classifier Forms,Pronominals,that one,C,Standard colloquial (Cholito),,3
+seta,সেটা,dem,Demonstratives & Classifier Forms,Pronominals,that one (aforementioned),C,Standard colloquial (Cholito),,4
+jeta,যেটা,dem,Demonstratives & Classifier Forms,Pronominals,the one which,C,Standard colloquial (Cholito),,4
+konta,কোনটা,int,Interrogatives,Pronominals,which one,C,Standard colloquial (Cholito),,5
+eti,এটি,dem,Demonstratives & Classifier Forms,Pronominals,this one (formal),C,Standard colloquial (Cholito),,3
+oti,ওটি,dem,Demonstratives & Classifier Forms,Pronominals,that one (formal),C,Standard colloquial (Cholito),,3
+seti,সেটি,dem,Demonstratives & Classifier Forms,Pronominals,that one (formal),C,Standard colloquial (Cholito),,4
+jeti,যেটি,dem,Demonstratives & Classifier Forms,Pronominals,the one which (formal),C,Standard colloquial (Cholito),,4
+egulo,এগুলো,dem,Demonstratives & Classifier Forms,Pronominals,these,C,Standard colloquial (Cholito),,5
+ogulo,ওগুলো,dem,Demonstratives & Classifier Forms,Pronominals,those,C,Standard colloquial (Cholito),,5
+segulo,সেগুলো,dem,Demonstratives & Classifier Forms,Pronominals,those (aforementioned),C,Standard colloquial (Cholito),,6
+jegulo,যেগুলো,dem,Demonstratives & Classifier Forms,Pronominals,the ones which,C,Standard colloquial (Cholito),,6
+hoy,হয়,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,is; happens,C,Standard colloquial (Cholito),,3
+hocche,হচ্ছে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,is happening,C,Standard colloquial (Cholito),,6
+hobe,হবে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,will be,C,Standard colloquial (Cholito),,4
+hoyechhe,হয়েছে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,has happened,C,Standard colloquial (Cholito),,8
+hoyechhilo,হয়েছিল,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,had happened,C,Standard colloquial (Cholito),,10
+holo,হল,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,became; happened,C,Standard colloquial (Cholito),,4
+hoto,হত,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,used to be; would be,C,Standard colloquial (Cholito),,4
+hok,হোক,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,let it be,C,Standard colloquial (Cholito),,3
+hochhilo,হচ্ছিল,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,was happening,C,Standard colloquial (Cholito),,8
+achhe,আছে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,is; exists,C,Standard colloquial (Cholito),,5
+achhi,আছি,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,(I) am,C,Standard colloquial (Cholito),,5
+chilo,ছিল,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,was,C,Standard colloquial (Cholito),,5
+chhilam,ছিলাম,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,(I) was,C,Standard colloquial (Cholito),,7
+thakbe,থাকবে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,will stay,C,Standard colloquial (Cholito),,6
+thak,থাক,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,let it stay; never mind,C,Standard colloquial (Cholito),,4
+thake,থাকে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,stays; remains,C,Standard colloquial (Cholito),,5
+koro,করো,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,do (imperative),C,Standard colloquial (Cholito),,4
+korchhe,করছে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,is doing,C,Standard colloquial (Cholito),,7
+korbe,করবে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,will do,C,Standard colloquial (Cholito),,5
+korechhe,করেছে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,has done,C,Standard colloquial (Cholito),,8
+korechhilo,করেছিল,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,had done,C,Standard colloquial (Cholito),,10
+kori,করি,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,(I) do,C,Standard colloquial (Cholito),,4
+korlam,করলাম,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,(I) did,C,Standard colloquial (Cholito),,6
+korbo,করব,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,(I) will do,C,Standard colloquial (Cholito),,5
+kora,করা,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,to do; doing (verbal noun),C,Standard colloquial (Cholito),,4
+korte,করতে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,to do (infinitive),C,Standard colloquial (Cholito),,5
+paren,পারেন,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,can (formal),C,Standard colloquial (Cholito),,5
+pare,পারে,aux,"Auxiliary, Copular & Modal Verbs",Verbal & Negation,can,C,Standard colloquial (Cholito),,4
+dhore,ধরে,cvb,Conjunctive Participles,Verbal & Negation,holding; for (a duration),C,Standard colloquial (Cholito),,5
+niye,নিয়ে,cvb,Conjunctive Participles,Verbal & Negation,taking; about,C,Standard colloquial (Cholito),,4
+kore,করে,cvb,Conjunctive Participles,Verbal & Negation,doing; by way of,C,Standard colloquial (Cholito),,4
+hoye,হয়ে,cvb,Conjunctive Participles,Verbal & Negation,being; via,C,Standard colloquial (Cholito),,4
+giye,গিয়ে,cvb,Conjunctive Participles,Verbal & Negation,having gone,C,Standard colloquial (Cholito),,4
+bole,বলে,cvb,Conjunctive Participles,Verbal & Negation,saying; because,C,Standard colloquial (Cholito),,4
+na,না,neg,Negation,Verbal & Negation,no; not,C,Standard colloquial (Cholito),,2
+ni,নি,neg,Negation,Verbal & Negation,"not (past, with verb)",C,Standard colloquial (Cholito),,2
+nei,নেই,neg,Negation,Verbal & Negation,is not there,C,Standard colloquial (Cholito),,3
+noy,নয়,neg,Negation,Verbal & Negation,is not,C,Standard colloquial (Cholito),,3
+non,নন,neg,Negation,Verbal & Negation,is not (honorific),C,Standard colloquial (Cholito),,3
+no,নও,neg,Negation,Verbal & Negation,(you) are not,C,Standard colloquial (Cholito),,2
+noi,নই,neg,Negation,Verbal & Negation,(I) am not,C,Standard colloquial (Cholito),,3
+hoyni,হয়নি,neg,Negation,Verbal & Negation,did not happen,C,Standard colloquial (Cholito),,5
+korini,করিনি,neg,Negation,Verbal & Negation,(I) did not do,C,Standard colloquial (Cholito),,6

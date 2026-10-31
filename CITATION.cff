@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this stop-word list, please cite it as below."
+title: "The Words We Read Past: Bengali Stop Words for Natural Language Processing"
+abstract: "A categorised list of 317 Bengali stop words with Bengali-script forms, English glosses and register labels, released as a Python module, data files and an interactive website."
+type: dataset
+authors:
+  - family-names: Nandi
+    given-names: Simanta
+    affiliation: "Department of Humanities and Social Sciences, Indian Institute of Technology (Indian School of Mines) Dhanbad"
+    email: 25ma0013@iitism.ac.in
+    website: "https://about.me/simantanandi"
+version: "1.0"
+date-released: "2026-10-31"
+license: CC-BY-NC-4.0
+url: "https://simantadh.github.io/Bengali_Stop_Words/"
+repository-code: "https://github.com/SimantaDH/Bengali_Stop_Words"
+keywords:
+  - Bengali
+  - stop words
+  - natural language processing
+  - text preprocessing
+  - Indic languages
+  - digital humanities

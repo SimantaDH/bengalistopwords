@@ -1,0 +1,83 @@
+{
+  "total_entries": 317,
+  "unique_bengali_forms": 314,
+  "categories": 17,
+  "macro_groups": 4,
+  "flagged_entries": 12,
+  "multiword_entries": 1,
+  "length_mean": 4.96,
+  "length_median": 5,
+  "length_min": 1,
+  "length_max": 10,
+  "register_counts": {
+    "C": 287,
+    "S": 28,
+    "R": 2
+  },
+  "macro_counts": {
+    "Pronominals": 135,
+    "Relational Words": 59,
+    "Adverbials": 80,
+    "Verbal & Negation": 43
+  },
+  "category_counts": {
+    "First-Person Pronouns": 8,
+    "Second-Person Pronouns": 21,
+    "Third-Person Pronouns": 15,
+    "Proximal & Distal Pronouns": 31,
+    "Relative Pronouns": 16,
+    "Interrogatives": 19,
+    "Reflexive, Reciprocal & Emphatic Forms": 7,
+    "Demonstratives & Classifier Forms": 18,
+    "Conjunctions & Connectives": 28,
+    "Postpositions & Case Markers": 31,
+    "Spatial Deictics": 5,
+    "Temporal Adverbs": 28,
+    "Quantifiers & Indefinites": 24,
+    "Manner, Degree & Discourse Adverbs": 23,
+    "Auxiliary, Copular & Modal Verbs": 28,
+    "Conjunctive Participles": 6,
+    "Negation": 9
+  },
+  "pronominal_share_pct": 42.6,
+  "script_collisions": {
+    "অন্য": [
+      "onno",
+      "onnya"
+    ],
+    "যথেষ্ট": [
+      "jothto",
+      "jothesto"
+    ]
+  },
+  "initial_letters": {
+    "a": 31,
+    "b": 11,
+    "c": 4,
+    "d": 6,
+    "e": 25,
+    "g": 2,
+    "h": 14,
+    "i": 5,
+    "j": 32,
+    "k": 54,
+    "m": 5,
+    "n": 19,
+    "o": 16,
+    "p": 13,
+    "r": 2,
+    "s": 21,
+    "t": 46,
+    "u": 11
+  },
+  "sample_text": "আমি যখন প্রথমে ধানবাদে এসেছিলাম, তখন শহরটা আমার কাছে একটু অচেনা মনে হয়েছিল। কিন্তু কয়েক দিনের মধ্যে সবকিছু বদলে গেল। এখন আমি রোজ সকালে লাইব্রেরির দিকে হাঁটি, আর সেখানে পুরোনো বইয়ের পাতার মধ্যে নিজের জন্য একটা শান্ত কোণ খুঁজে পাই। হয়তো এই কারণে শহরটাকে এখন আর অচেনা লাগে না।",
+  "sample_tokens": 49,
+  "sample_stopword_tokens": 27,
+  "sample_coverage_pct": 55.1,
+  "sample_notable_misses": [
+    "একটা",
+    "গেল",
+    "মনে",
+    "শহরটাকে"
+  ]
+}
