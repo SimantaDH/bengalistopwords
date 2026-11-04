@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en-GB" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Words We Read Past: Bengali Stop Words for NLP</title>
+<meta name="description" content="A categorised list of 317 Bengali stop words with Bengali-script forms, a Python module and an analysis. A Digital Humanities project by Simanta Nandi, IIT (ISM) Dhanbad.">
+<meta name="author" content="Simanta Nandi">
+<meta property="og:title" content="The Words We Read Past: Bengali Stop Words for NLP">
+<meta property="og:description" content="317 Bengali stop words, annotated, categorised and analysed. Python module, data files and an interactive analysis.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://simantadh.github.io/bengalistopwords/">
+<meta property="og:image" content="https://simantadh.github.io/bengalistopwords/fig1_category_breakdown.png">
+<meta name="theme-color" content="#0d1524">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  try { var t = localStorage.getItem('bsw-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#abstract">Skip to the abstract</a>
+<div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+<div class="lamp-glow" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top" aria-label="Back to the top">
+    <span class="brand-bn" lang="bn">বাংলা</span>
+    <span class="brand-en">The words we read past</span>
+  </a>
+  <nav class="topnav" id="topnav" aria-label="Sections">
+    <a href="#abstract">Abstract</a>
+    <a href="#list">The list</a>
+    <a href="#analysis">Analysis</a>
+    <a href="#discussion">Discussion</a>
+    <a href="#author">Author</a>
+    <a href="#cite">Cite</a>
+    <a class="nav-gh" href="https://github.com/SimantaDH/bengalistopwords" target="_blank" rel="noopener" title="Open the GitHub repository in a new tab">
+      <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      <span>GitHub</span>
+    </a>
+  </nav>
+  <div class="topbar-tools">
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to the light page">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path class="lamp-icon" d="M12 3c2.5 3 4 5.3 4 7.4A4 4 0 0 1 12 14.5a4 4 0 0 1-4-4.1C8 8.3 9.5 6 12 3Zm-5 14.5h10l-1.2 2.4a2 2 0 0 1-1.8 1.1h-4a2 2 0 0 1-1.8-1.1Z"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open the section menu" aria-expanded="false" aria-controls="topnav">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <canvas id="dark-field" aria-hidden="true"></canvas>
+  <div class="hero-text">
+    <p class="hero-bn" lang="bn">যে শব্দগুলো চোখ এড়িয়ে যায়</p>
+    <h1 id="hero-title">The words we read past</h1>
+    <p class="hero-sub">Bengali stop words for natural language processing: a categorised list of 317 words, a Python module, and what the list reveals about the language.</p>
+    <p class="hero-by">Simanta Nandi<span>MA, Digital Humanities and Social Sciences, Indian Institute of Technology (Indian School of Mines) Dhanbad</span></p>
+  </div>
+  <p class="hero-hint" id="hero-hint">
+    <span class="hint-lamp" aria-hidden="true"></span>
+    <span><strong class="hint-pointer">Move the light across the dark to read.</strong><strong class="hint-touch">Drag your finger across the dark to read.</strong> Stop words are the small words every sentence leans on and every reader passes over. Here, in the dark, they are the only words there are.</span>
+  </p>
+  <a class="hero-down" href="#abstract" aria-label="Scroll to the abstract"><span></span></a>
+</section>
+
+<main id="main">
+
+<!-- ============================== ABSTRACT ============================== -->
+<section class="chapter" id="abstract" aria-labelledby="h-abstract">
+  <aside class="margin" aria-hidden="true"><span lang="bn">সারসংক্ষেপ</span></aside>
+  <div class="prose">
+    <h2 id="h-abstract">Abstract</h2>
+    <p class="lede">Every Bengali sentence leans on a handful of small words. Pronouns, postpositions, conjunctions, auxiliary verbs and negators carry the grammar of a sentence while saying little about what it is about. In natural language processing (NLP) these are called stop words, and they are usually removed before a text is counted, indexed or modelled.</p>
+    <p>English has had tested stop lists since the early years of information retrieval (Luhn 1958; Fox 1990). Bengali, with roughly 284 million speakers (Eberhard, Simons and Fennig 2025), has far fewer, and most of those in circulation are bare lists in Bengali script that say nothing about how the words were chosen.</p>
+    <p>This project compiles 317 Bengali stop words in romanised form and annotates each one with its Bengali-script spelling, an English gloss, a grammatical category and a register label. The words fall into 17 categories, grouped into four families: pronominals, relational words, adverbials, and verbal forms with negation. The list is released as a Python module in the format set for the course, as plain-text, CSV and JSON files, and as this website.</p>
+    <p>Three findings stand out. Pronouns and their case forms make up 42.6 per cent of the list, because Bengali marks person, number, case and three grades of politeness on the pronoun itself. The romanised list does not map cleanly onto Bengali script: 317 entries resolve to 314 distinct Bengali words, and one entry could not be matched with confidence. And a test on a short passage shows the list removing a little over half of all tokens (27 of 49), while words carrying suffixes pass through untouched. I argue that an Indic stop list is more useful when it records categories and register, so that a researcher can decide which kinds of small word to remove for a given question.</p>
+    <p class="keywords"><span>Keywords</span> Bengali; stop words; natural language processing; text preprocessing; Indic languages; romanisation; digital humanities</p>
+  </div>
+</section>
+
+<!-- ============================== OBJECTIVES ============================== -->
+<section class="chapter" id="objectives" aria-labelledby="h-objectives">
+  <aside class="margin" aria-hidden="true"><span lang="bn">উদ্দেশ্য</span></aside>
+  <div class="prose">
+    <h2 id="h-objectives">Objectives</h2>
+    <ol class="aims">
+      <li>Compile a Bengali stop-word list that covers the closed-class words of standard modern usage, together with the older literary forms that still turn up in digitised books.</li>
+      <li>Pair every romanised entry with its Bengali-script spelling, a short English gloss, a grammatical category and a register label, so that the list can be checked rather than taken on trust.</li>
+      <li>Package the list as a Python file in the format set for the course, with small functions for filtering text written in either script.</li>
+      <li>Analyse the make-up of the list and report what it shows about Bengali grammar and about the limits of romanised stop lists.</li>
+      <li>Publish the data, code and analysis openly under a Creative Commons BY-NC 4.0 licence.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== RESEARCH QUESTIONS ============================== -->
+<section class="chapter" id="questions" aria-labelledby="h-questions">
+  <aside class="margin" aria-hidden="true"><span lang="bn">গবেষণা-প্রশ্ন</span></aside>
+  <div class="prose">
+    <h2 id="h-questions">Research questions</h2>
+    <dl class="rq">
+      <div><dt>RQ1</dt><dd>Which kinds of words make up most of a Bengali stop list, and what in the grammar of Bengali explains that balance?</dd></div>
+      <div><dt>RQ2</dt><dd>How far does an informal romanisation map onto Bengali script, and where does the mapping fail?</dd></div>
+      <div><dt>RQ3</dt><dd>How much of ordinary prose does a fixed list remove, and which forms escape it?</dd></div>
+      <div><dt>RQ4</dt><dd>Beyond the words themselves, what should an Indic stop list record if it is to serve humanities research as well as engineering?</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============================== METHOD ============================== -->
+<section class="chapter" id="method" aria-labelledby="h-method">
+  <aside class="margin" aria-hidden="true"><span lang="bn">পদ্ধতি</span></aside>
+  <div class="prose">
+    <h2 id="h-method">Method</h2>
+    <p>The work moved through six stages. Each stage fed the next, and the final annotated table is the single source for every file and figure in the project.</p>
+    <ol class="steps">
+      <li>
+        <h3>Collection</h3>
+        <p>I began with the personal pronouns and wrote each one out through its case forms, singular and plural. Relative and interrogative pronouns followed, then postpositions, conjunctions, adverbs of time and place, quantifiers, auxiliary verbs and negators. The list grew over several rounds of revision.</p>
+      </li>
+      <li>
+        <h3>Romanisation</h3>
+        <p>Entries are written in the informal romanisation that many Bengali speakers use when typing on a phone or a Latin keyboard, not in a scholarly scheme such as ISO 15919. I kept the spellings as I first typed them. The variation in the list is part of the evidence, so I did not tidy it away.</p>
+      </li>
+      <li>
+        <h3>Script mapping</h3>
+        <p>Each romanised form was matched to its standard Bengali spelling. Honorific pronouns keep their chandrabindu (<span lang="bn">তাঁর, এঁর, ওঁর</span>), and the distinction between <span lang="bn">কি</span>, the yes-or-no particle, and <span lang="bn">কী</span>, 'what', is preserved.</p>
+      </li>
+      <li>
+        <h3>Annotation</h3>
+        <p>Every entry received a category, a gloss, a register label (standard colloquial Cholito, literary Sadhu, or regional) and, where needed, a note. Twelve entries carry a note, usually because the form is ambiguous or its spelling is uncertain.</p>
+      </li>
+      <li>
+        <h3>Checking</h3>
+        <p>A script counts the entries, looks for duplicates, finds romanised forms that collapse into one Bengali word, and runs the list over a short test passage written for this project.</p>
+      </li>
+      <li>
+        <h3>Release</h3>
+        <p>The same table generates the Python module, the plain-text, CSV and JSON exports, the figures in the repository and the charts on this page, so the numbers cannot drift apart.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== THE LIST ============================== -->
+<section class="chapter wide" id="list" aria-labelledby="h-list">
+  <aside class="margin" aria-hidden="true"><span lang="bn">শব্দতালিকা</span></aside>
+  <div class="prose">
+    <h2 id="h-list">The list</h2>
+    <p>All 317 entries, set out like a small dictionary. Search in either script or in English, narrow the list by family, category or register, and select any word to see its annotation.</p>
+  </div>
+
+  <div class="lexicon-tools" role="search">
+    <label class="search">
+      <span class="visually-hidden">Search the stop words</span>
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input id="lex-search" type="search" placeholder="Search: tumi, তুমি, 'because'" autocomplete="off" spellcheck="false">
+    </label>
+    <div class="chips" id="macro-chips" role="group" aria-label="Filter by family"></div>
+    <div class="lex-selects">
+      <label><span>Category</span>
+        <select id="cat-select"><option value="">All categories</option></select>
+      </label>
+      <label><span>Register</span>
+        <select id="reg-select">
+          <option value="">All registers</option>
+          <option value="C">Standard colloquial (Cholito)</option>
+          <option value="S">Literary (Sadhu) or formal</option>
+          <option value="R">Regional or informal</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" id="flag-only"> <span>Only words with a note</span></label>
+    </div>
+    <p class="lex-count" id="lex-count" aria-live="polite"></p>
+  </div>
+
+  <div class="lexicon-wrap">
+    <div class="lexicon" id="lexicon"></div>
+    <aside class="entry-card" id="entry-card" aria-live="polite">
+      <p class="entry-empty">Select a word to read its entry.</p>
+    </aside>
+  </div>
+
+  <div class="downloads prose">
+    <h3>Download the list</h3>
+    <ul>
+      <li><a href="bengali_stopwords.py" download>bengali_stopwords.py</a> <span>Python module in the course format, with helper functions</span></li>
+      <li><a href="bengali_stopwords.txt" download>bengali_stopwords.txt</a> <span>romanised, one word per line</span></li>
+      <li><a href="bengali_stopwords_bn.txt" download>bengali_stopwords_bn.txt</a> <span>Bengali script, one word per line</span></li>
+      <li><a href="bengali_stopwords.csv" download>bengali_stopwords.csv</a> <span>full annotated table</span></li>
+      <li><a href="bengali_stopwords.json" download>bengali_stopwords.json</a> <span>table, categories and summary figures</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== ANALYSIS ============================== -->
+<section class="chapter" id="analysis" aria-labelledby="h-analysis">
+  <aside class="margin" aria-hidden="true"><span lang="bn">বিশ্লেষণ</span></aside>
+  <div class="prose">
+    <h2 id="h-analysis">Analysis</h2>
+    <p>The figures below come straight from the annotated table. Each one answers part of a research question, and each can be read as a table if you prefer numbers to shapes.</p>
+
+    <dl class="ledger" aria-label="The list in figures">
+      <div><dt>Entries</dt><dd>317</dd></div>
+      <div><dt>Distinct Bengali words</dt><dd>314</dd></div>
+      <div><dt>Categories</dt><dd>17</dd></div>
+      <div><dt>Share that are pronominal</dt><dd>42.6%</dd></div>
+      <div><dt>Literary Sadhu forms</dt><dd>28</dd></div>
+      <div><dt>Mean length, romanised</dt><dd>4.96 letters</dd></div>
+    </dl>
+
+    <h3 class="fig-title" id="h-families">Where the words fall</h3>
+    <p>Pronominals dominate, with 135 of the 317 entries. Adverbials follow with 80, relational words with 59 and verbal forms with 43. The largest single categories are the proximal and distal pronouns and the postpositions, which have 31 entries each. Select a segment to open those words in the list.</p>
+  </div>
+
+  <figure class="figure" id="fig-families">
+    <div class="fig-body fig-split">
+      <div class="ring" id="ring-chart" role="img" aria-label="Ring chart of stop words by family and category"></div>
+      <div class="bars" id="bar-chart"></div>
+    </div>
+    <figcaption>Figure 1. Stop words by family (inner ring) and category (outer ring and bars). <button class="link-btn" data-table="families" type="button">Show as a table</button></figcaption>
+    <div class="fig-table" id="table-families" hidden></div>
+  </figure>
+
+  <div class="prose">
+    <h3 class="fig-title" id="h-pronouns">Why the pronouns multiply</h3>
+    <p>An English stop list needs four words for the first person singular: I, me, my, mine. Bengali needs more, mostly because it builds politeness into the pronoun. The second person alone comes in three grades. <em>Tui</em> is for close friends, younger siblings and children; <em>tumi</em> for equals and most family; <em>apni</em> for strangers, elders and anyone owed respect. The third person splits into ordinary and honorific forms (<em>se</em> and <em>tini</em>), and the same split runs through the near, far and relative series (Thompson 2012).</p>
+    <p>Each grade then takes its own nominative, objective and genitive, in the singular and the plural. Thirteen pronoun series across six case slots make 78 cells, and the list fills every one of them. Two gaps sit just outside the grid. The bare near pronoun <em>e</em> (<span lang="bn">এ</span>) is missing, so its nominative slot is held only by the literary <em>iha</em>. And the everyday classifier form <em>ekta</em> (<span lang="bn">একটা</span>) is absent although the more formal <em>ekti</em> is present.</p>
+  </div>
+
+  <figure class="figure" id="fig-paradigm">
+    <div class="fig-tools">
+      <div class="seg" role="group" aria-label="Script shown in the grid">
+        <button type="button" class="on" data-script="roman" aria-pressed="true">Romanised</button>
+        <button type="button" data-script="bn" aria-pressed="false" lang="bn">বাংলা</button>
+      </div>
+    </div>
+    <div class="fig-body"><div class="paradigm" id="paradigm"></div></div>
+    <figcaption>Figure 2. The pronoun paradigm. Rows are pronoun series, columns are case and number. A marked cell holds two forms, usually a colloquial one and its literary twin. Point at a cell to light its row and column.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h3 class="fig-title" id="h-correlatives">Five initial sounds, one system</h3>
+    <p>Sort the list by first letter and three letters lead: <em>k</em> (54 words), <em>t</em> (46) and <em>j</em> (32). This is no accident of spelling. Bengali builds its question words, relative words and answering words as matched sets that differ only in the opening sound. <em>Kothay</em> asks 'where?', <em>jekhane</em> means 'where' in a relative clause, <em>sekhane</em> answers 'there', and <em>ekhane</em> and <em>okhane</em> point to 'here' and 'over there'. Grammars call this the correlative system.</p>
+    <p>Laid out as a table, the system also shows what the list has missed. <em>Kokhon</em> ('when?') is absent, though <em>kokhono</em> ('ever') is present. So are <em>eto</em> and <em>oto</em> ('this much', 'that much') and <em>omon</em> ('like that'). These are frequent words and good candidates for the next version.</p>
+  </div>
+
+  <figure class="figure" id="fig-correlatives">
+    <div class="fig-body"><div class="correl" id="correl"></div></div>
+    <figcaption>Figure 3. The correlative table. Filled cells are in the list; outlined cells show forms the list does not yet include.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h3 class="fig-title" id="h-register">Old and new registers</h3>
+    <p>Twenty-eight entries (8.8 per cent) belong to Sadhu Bhasha, the formal literary standard of nineteenth-century prose, which the colloquial Cholito standard has since largely replaced in writing. Almost all of them are pronouns: <em>tahar</em> beside <em>tar</em>, <em>iha</em> beside <em>e</em>, <em>jaha</em> beside <em>je</em>, and the long objective <em>amadigoke</em> beside <em>amaderke</em>. They matter for anyone working with digitised literature from before the middle of the twentieth century, where these forms are ordinary function words. Only two entries are marked as regional: <em>kamne</em> ('how') and <em>koy</em> ('how many'), both common in eastern speech.</p>
+  </div>
+
+  <figure class="figure" id="fig-register">
+    <div class="fig-body"><div id="register-chart"></div></div>
+    <figcaption>Figure 4. Register by family. Literary forms cluster among the pronominals. <button class="link-btn" data-table="register" type="button">Show as a table</button></figcaption>
+    <div class="fig-table" id="table-register" hidden></div>
+  </figure>
+
+  <div class="prose">
+    <h3 class="fig-title" id="h-length">Short words, mostly</h3>
+    <p>The romanised forms average 4.96 letters, with a median of five. The shortest is <em>o</em>, a single letter that is both a pronoun ('he' or 'she', at a distance) and the particle 'also'. The longest run to ten letters: the literary plurals <em>tomadigoke</em> and <em>apnadigoke</em>, and the past perfect forms <em>hoyechhilo</em> and <em>korechhilo</em>.</p>
+  </div>
+
+  <figure class="figure narrow" id="fig-length">
+    <div class="fig-body"><div id="length-chart"></div></div>
+    <figcaption>Figure 5. Length of the romanised forms, in letters.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <h3 class="fig-title" id="h-script">From roman letters to Bengali script</h3>
+    <p>Romanised Bengali has no fixed spelling, and the list shows it. Two pairs of entries spell one Bengali word: <em>onno</em> and <em>onnya</em> (<span lang="bn">অন্য</span>), and <em>jothto</em> and <em>jothesto</em> (<span lang="bn">যথেষ্ট</span>). One entry, <em>noba</em>, matches no standard form I could confirm. The list is also inconsistent with itself. It writes <em>chilo</em> with one <em>h</em> but <em>chhilam</em> and <em>hochhilo</em> with two, so a romanised text that spells the word <em>chhilo</em> slips straight past the filter.</p>
+    <p>Bengali script avoids that problem, because its spelling is settled, but it sets a different trap. Letters such as <span lang="bn">য়</span> and <span lang="bn">ড়</span> can be stored either as one Unicode character or as a base letter followed by a dot below, the nukta. The two look the same on screen and do not match inside a computer. The Python module converts every text to Unicode Normalisation Form C before comparing words, which removes the mismatch (Unicode Consortium 2024).</p>
+  </div>
+
+  <div class="prose">
+    <h3 class="fig-title" id="h-try">Try the list on real text</h3>
+    <p>The passage below was written for this project. It has 49 tokens, and the list removes 27 of them, or 55.1 per cent. Replace it with any Bengali text, in either script, and the lamp will pick out the stop words.</p>
+  </div>
+
+  <figure class="figure" id="fig-try">
+    <div class="tryit">
+      <div class="try-input">
+        <div class="seg" role="group" aria-label="Sample passage">
+          <button type="button" class="on" data-sample="bn" aria-pressed="true" lang="bn">বাংলা হরফ</button>
+          <button type="button" data-sample="roman" aria-pressed="false">Romanised</button>
+        </div>
+        <label class="visually-hidden" for="try-text">Bengali text to filter</label>
+        <textarea id="try-text" rows="7" spellcheck="false"></textarea>
+      </div>
+      <div class="try-output">
+        <div class="try-stats" id="try-stats" aria-live="polite"></div>
+        <p class="try-render" id="try-render"></p>
+        <p class="try-keep-label">What remains after filtering</p>
+        <p class="try-keep" id="try-keep"></p>
+      </div>
+    </div>
+    <figcaption>Figure 6. Live filter. Lit words are stop words; dim words are kept.</figcaption>
+  </figure>
+
+  <div class="prose">
+    <p>Look at what survives. <span lang="bn">শহরটা</span> ('the town') and <span lang="bn">শহরটাকে</span> carry a classifier and a case ending, so they are no longer bare nouns, which is what a content word should look like after filtering. But <span lang="bn">একটা</span> is a classifier form that ought to go and is not on the list, and <span lang="bn">গেল</span> ('went') and <span lang="bn">মনে</span> (as in <span lang="bn">মনে হওয়া</span>, 'to seem') behave much like function words without being listed as such. A stemmer, or a list that includes common suffixed forms, would catch more.</p>
+  </div>
+</section>
+
+<!-- ============================== DISCUSSION ============================== -->
+<section class="chapter" id="discussion" aria-labelledby="h-discussion">
+  <aside class="margin" aria-hidden="true"><span lang="bn">আলোচনা</span></aside>
+  <div class="prose">
+    <h2 id="h-discussion">Discussion</h2>
+    <p>A stop list looks like a neutral tool, but it is a small theory of what counts as empty in a language. For English the theory costs little. Function words carry little that a topic model or a search index needs, and even so, web search engines have moved over time from long stop lists to short ones and, in many cases, to none (Manning, Raghavan and Schütze 2008). For Bengali, the assumption runs into trouble in at least three places.</p>
+    <p>The first is politeness. Removing <em>tui</em>, <em>tumi</em> and <em>apni</em> throws away information about how the people in a text stand towards one another. A study of dialogue in fiction, of forms of address in letters, or of how two characters slip from <em>apni</em> to <em>tumi</em> as they grow close would lose its main evidence. This is why the list is published with categories. A researcher can drop the postpositions and conjunctions and keep the pronouns.</p>
+    <p>The second is negation. Bengali usually places the negator after the verb (<em>jabo na</em>, 'I will not go'), and deleting <em>na</em>, <em>nei</em> or <em>noy</em> turns a sentence into its opposite. For sentiment analysis, or any task that depends on what a sentence actually asserts, the negation category should stay in the text.</p>
+    <p>The third is script. A great deal of Bengali written online is romanised, typed on Latin keyboards with no agreed spelling. A list in Bengali script alone misses that material entirely; a romanised list without variants misses much of it. Publishing both forms side by side is a modest step towards handling the two together.</p>
+    <p>Taken together, these points answer RQ4. For digital humanities work the useful question is seldom whether to remove stop words. It is which ones, for this question, in this corpus. Categories and register labels make that choice visible and easy to change, which a flat list of words cannot do.</p>
+  </div>
+</section>
+
+<!-- ============================== LIMITATIONS ============================== -->
+<section class="chapter" id="limitations" aria-labelledby="h-limitations">
+  <aside class="margin" aria-hidden="true"><span lang="bn">সীমাবদ্ধতা</span></aside>
+  <div class="prose">
+    <h2 id="h-limitations">Limitations</h2>
+    <p>The list rests on my own knowledge of the language and on standard grammatical description. It has not been checked against word frequencies from a large corpus, so some common function words are probably missing (the analysis found <em>ekta</em>, <em>kokhon</em> and the bare pronoun <em>e</em>), and a few entries may be rarer than their place here suggests.</p>
+    <p>The romanisation is informal and far from exhaustive. Real romanised text varies much more than this list does, with <em>ch</em> and <em>chh</em>, <em>o</em> and <em>a</em>, <em>s</em> and <em>sh</em> alternating freely. A filter that relies on exact matches will miss many spellings that any reader would recognise at once.</p>
+    <p>Matching works on whole words only. Bengali attaches emphatic particles (<em>-i</em>, <em>-o</em>), classifiers (<em>-ta</em>, <em>-ti</em>, <em>-gulo</em>) and case endings directly to the word, so <span lang="bn">আমিই</span> ('I myself') will not match <span lang="bn">আমি</span> unless a stemmer runs first.</p>
+    <p>The standard colloquial Bengali of West Bengal dominates. Bangladeshi standard usage and regional varieties, including the Manbhumi speech of the country around Dhanbad, are barely represented.</p>
+    <p>A few forms are uncertain. Twelve entries carry a note, and three of them (<em>noba</em>, <em>aposh</em> and <em>jothto</em>) should be checked against a dictionary before the list is reused.</p>
+    <p>The list knows nothing of context. It cannot tell <em>kal</em> 'yesterday' from <em>kal</em> 'tomorrow', or <em>o</em> 'he' from <em>o</em> 'also', and it removes both senses alike. Finally, the test passage is short and was written for the purpose. Its figure of 55 per cent illustrates the method; it is not a benchmark.</p>
+  </div>
+</section>
+
+<!-- ============================== FURTHER WORK ============================== -->
+<section class="chapter" id="further" aria-labelledby="h-further">
+  <aside class="margin" aria-hidden="true"><span lang="bn">পরবর্তী কাজ</span></aside>
+  <div class="prose">
+    <h2 id="h-further">Further work</h2>
+    <ul class="plain">
+      <li>Check the list against word frequencies from a large Bengali corpus such as AI4Bharat's IndicCorp (Kakwani et al. 2020), adding frequent forms that are missing and marking rare ones.</li>
+      <li>Compare it with existing Bengali stop lists, such as the one in the Stopwords ISO collection, and report where they overlap and where they part.</li>
+      <li>Add a light stemmer for emphatic particles, classifiers and case endings, and a transliteration step, so that romanised and Bengali-script text pass through one pipeline.</li>
+      <li>Fill the gaps the correlative table exposed: <em>kokhon</em>, <em>eto</em>, <em>oto</em>, <em>omon</em>, <em>ekta</em> and the bare pronoun <em>e</em>.</li>
+      <li>Ask a small group of Bengali speakers from West Bengal, Bangladesh and the Jharkhand border to review the list and its register labels.</li>
+      <li>Extend the same annotated format to the other Indic languages covered in the course.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== CODE ============================== -->
+<section class="chapter" id="code" aria-labelledby="h-code">
+  <aside class="margin" aria-hidden="true"><span lang="bn">ব্যবহার</span></aside>
+  <div class="prose">
+    <h2 id="h-code">Using the code</h2>
+    <p>Download <a href="bengali_stopwords.py" download>bengali_stopwords.py</a> and place it beside your own script. It needs nothing beyond the Python standard library.</p>
+    <div class="code">
+      <button class="copy-btn" type="button" data-copy="code-1">Copy</button>
+<pre id="code-1"><code><span class="c"># Filter a Bengali sentence in either script</span>
+<span class="k">from</span> bengali_stopwords <span class="k">import</span> bengali_stopwords, remove_stopwords, is_stopword
+
+print(len(bengali_stopwords))   <span class="c"># 317</span>
+
+text = <span class="s">"আমি যখন প্রথমে এখানে এসেছিলাম, তখন শহরটা আমার কাছে একটু অচেনা ছিল"</span>
+print(remove_stopwords(text))
+<span class="c"># ['এসেছিলাম', 'শহরটা', 'অচেনা']</span>
+
+print(is_stopword(<span class="s">"tumi"</span>), is_stopword(<span class="s">"তুমি"</span>))   <span class="c"># True True</span></code></pre>
+    </div>
+    <p>To keep a category in the text, for instance the pronouns of address in a study of dialogue, build a custom list from the categories:</p>
+    <div class="code">
+      <button class="copy-btn" type="button" data-copy="code-2">Copy</button>
+<pre id="code-2"><code><span class="k">from</span> bengali_stopwords <span class="k">import</span> bengali_stopwords, stopword_categories
+
+keep = set(stopword_categories[<span class="s">"Second-Person Pronouns"</span>])
+keep |= set(stopword_categories[<span class="s">"Negation"</span>])
+custom_list = [w <span class="k">for</span> w <span class="k">in</span> bengali_stopwords <span class="k">if</span> w <span class="k">not in</span> keep]
+print(len(custom_list))   <span class="c"># 287</span></code></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== REFERENCES ============================== -->
+<section class="chapter" id="references" aria-labelledby="h-references">
+  <aside class="margin" aria-hidden="true"><span lang="bn">তথ্যসূত্র</span></aside>
+  <div class="prose">
+    <h2 id="h-references">References</h2>
+    <ul class="refs">
+      <li>Bird, Steven, Ewan Klein and Edward Loper. 2009. <cite>Natural Language Processing with Python</cite>. Sebastopol, CA: O'Reilly Media.</li>
+      <li>Chatterji, Suniti Kumar. 1926. <cite>The Origin and Development of the Bengali Language</cite>. Calcutta: Calcutta University Press.</li>
+      <li>Eberhard, David M., Gary F. Simons and Charles D. Fennig, eds. 2025. <cite>Ethnologue: Languages of the World</cite>. 28th edn. Dallas: SIL International.</li>
+      <li>Fox, Christopher J. 1990. 'A Stop List for General Text'. <cite>ACM SIGIR Forum</cite> 24 (1-2).</li>
+      <li>Kakwani, Divyanshu, Anoop Kunchukuttan, Satish Golla, Gokul N.C., Avik Bhattacharyya, Mitesh M. Khapra and Pratyush Kumar. 2020. 'IndicNLPSuite: Monolingual Corpora, Evaluation Benchmarks and Pre-trained Multilingual Language Models for Indian Languages'. In <cite>Findings of the Association for Computational Linguistics: EMNLP 2020</cite>, 4948-4961. Online: Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/2020.findings-emnlp.445">doi:10.18653/v1/2020.findings-emnlp.445</a>.</li>
+      <li>Luhn, H. P. 1958. 'The Automatic Creation of Literature Abstracts'. <cite>IBM Journal of Research and Development</cite> 2 (2): 159-165.</li>
+      <li>Manning, Christopher D., Prabhakar Raghavan and Hinrich Schütze. 2008. <cite>Introduction to Information Retrieval</cite>. Cambridge: Cambridge University Press.</li>
+      <li>Thompson, Hanne-Ruth. 2012. <cite>Bengali</cite>. London Oriental and African Language Library 18. Amsterdam: John Benjamins.</li>
+      <li>Unicode Consortium. 2024. <cite>Unicode Standard Annex #15: Unicode Normalization Forms</cite>. Mountain View, CA: Unicode Consortium. <a href="https://www.unicode.org/reports/tr15/">unicode.org/reports/tr15</a>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== AUTHOR ============================== -->
+<section class="chapter" id="author" aria-labelledby="h-author">
+  <aside class="margin" aria-hidden="true"><span lang="bn">লেখক পরিচিতি</span></aside>
+  <div class="prose">
+    <h2 id="h-author">About the author</h2>
+    <div class="bio">
+      <figure class="portrait" id="portrait">
+        <picture>
+          <source srcset="simanta-nandi.webp" type="image/webp">
+          <img src="simanta-nandi.jpg" width="560" height="700" alt="Portrait of Simanta Nandi, smiling, in a white shirt printed with handwriting" loading="lazy">
+        </picture>
+      </figure>
+      <div class="bio-text">
+        <p class="bio-name">Simanta Nandi</p>
+        <p class="bio-role">MA, Digital Humanities and Social Sciences, Indian Institute of Technology (Indian School of Mines) Dhanbad</p>
+        <p>Simanta is an MA student in Digital Humanities and Social Sciences at IIT (ISM) Dhanbad. He completed the Summer Research Internship Programme 2026 at IIST Thiruvananthapuram, where he worked on preserving cultural narratives, and holds a BA in Comparative Literature from Jadavpur University, taken through CENTIL.</p>
+        <p>He has taken part in the fifteen-day UNESCO World Heritage Education Programme at Visva-Bharati and in a British Library archival digitisation workshop run with ILSR. His article 'Impact of Popular Culture and Media on Literary Reception in the Northeast of India' appears in <cite>Re-imagining Northeast Writing and Narratives: Language, Culture and Border Identities</cite> (Jamia Millia Islamia, 2024).</p>
+        <p>His research interests span digital archiving, cultural heritage, AI for the humanities, electronic literature and digital memory studies. He was recognised by Oxford University Press India in 2021.</p>
+        <p class="bio-links">
+          <a href="https://about.me/simantanandi" rel="noopener">about.me/simantanandi</a>
+          <a href="mailto:25ma0013@iitism.ac.in">25ma0013@iitism.ac.in</a>
+        </p>
+      </div>
+    </div>
+
+    <h3 class="sub">Project supervision</h3>
+    <ul class="supervisors">
+      <li><a href="https://shanmugapriya.com/" rel="noopener">Shanmugapriya T</a></li>
+      <li><a href="https://linktr.ee/sourav.dh.litcult" rel="noopener">Sourav Ghosh</a></li>
+    </ul>
+    <p class="small">Department of Humanities and Social Sciences, IIT (ISM) Dhanbad. Monsoon Semester 2026.</p>
+  </div>
+</section>
+
+<!-- ============================== CITE ============================== -->
+<section class="chapter" id="cite" aria-labelledby="h-cite">
+  <aside class="margin" aria-hidden="true"><span lang="bn">উদ্ধৃতি</span></aside>
+  <div class="prose">
+    <h2 id="h-cite">Cite this project</h2>
+    <p>Choose a style and copy the reference. The access date is set to today; change it if you consulted the site on another day.</p>
+    <div class="citer">
+      <div class="citer-tabs" role="tablist" aria-label="Citation style" id="cite-tabs"></div>
+      <div class="citer-row">
+        <label>Cite as
+          <select id="cite-type">
+            <option value="web">Website</option>
+            <option value="dataset">Dataset</option>
+            <option value="software">Software</option>
+          </select>
+        </label>
+        <label>Accessed
+          <input type="date" id="cite-date">
+        </label>
+      </div>
+      <div class="citer-out" role="tabpanel" id="cite-panel">
+        <div class="citer-text" id="cite-text"></div>
+        <div class="citer-actions">
+          <button class="btn" type="button" id="cite-copy">Copy reference</button>
+          <button class="btn ghost" type="button" id="cite-download" hidden>Download file</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== LICENCE AND CONTACT ============================== -->
+<section class="chapter" id="licence" aria-labelledby="h-licence">
+  <aside class="margin" aria-hidden="true"><span lang="bn">স্বত্ব ও যোগাযোগ</span></aside>
+  <div class="prose">
+    <h2 id="h-licence">Licence and contact</h2>
+    <div class="licence">
+      <a class="cc" href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license noopener" aria-label="Creative Commons Attribution-NonCommercial 4.0 International">
+        <span>cc</span><span>by</span><span>nc</span>
+      </a>
+      <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license noopener">Creative Commons Attribution-NonCommercial 4.0 International Licence</a>. You may copy, share and adapt the list, the code and the text for non-commercial purposes, provided you credit Simanta Nandi and link to the licence. The bundled D3 library keeps its own ISC licence.</p>
+    </div>
+    <p>Questions, corrections and suggestions for missing words are welcome. Write to <a href="mailto:25ma0013@iitism.ac.in">25ma0013@iitism.ac.in</a>, visit <a href="https://about.me/simantanandi" rel="noopener">about.me/simantanandi</a>, or open an issue on the <a href="https://github.com/SimantaDH/bengalistopwords" rel="noopener">GitHub repository</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Simanta Nandi, 2026. Department of Humanities and Social Sciences, IIT (ISM) Dhanbad.</p>
+  <a class="foot-top" href="#top">↑ Back to the top</a>
+</footer>
+
+<a class="to-top" id="to-top" href="#top" aria-label="Back to the top" title="Back to the top">
+  <svg class="to-top-ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><circle class="to-top-fill" id="to-top-fill" cx="24" cy="24" r="22"/></svg>
+  <span aria-hidden="true">↑</span>
+</a>
+
+<div class="tooltip" id="tooltip" role="status" aria-live="polite" hidden></div>
+
+<script src="d3.min.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
