@@ -285,7 +285,7 @@
 
   <div class="prose">
     <h3 class="fig-title" id="h-try">Try the list on real text</h3>
-    <p>The passage below was written for this project. It has 49 tokens, and the list removes 27 of them, or 55.1 per cent. Replace it with any Bengali text, in either script, and the lamp will pick out the stop words.</p>
+    <p>The passage below was written for this project. Replace it with any Bengali text, in either script, and the tool will show which of the 317 stop words in the dataset appear in it, and how often. Nothing outside the dataset is shown.</p>
   </div>
 
   <figure class="figure" id="fig-try">
@@ -300,17 +300,12 @@
       </div>
       <div class="try-output">
         <div class="try-stats" id="try-stats" aria-live="polite"></div>
-        <p class="try-render" id="try-render"></p>
-        <p class="try-found-label" id="try-found-label">Your stop words found in this text</p>
+        <p class="try-found-label">Stop words from the dataset found in this text, in order of appearance</p>
         <p class="try-found" id="try-found"></p>
       </div>
     </div>
-    <figcaption>Figure 6. Live filter. It uses only the 317 stop words in this project's list. Lit words are matches; dim words are kept. Point at a lit word to see its entry.</figcaption>
+    <figcaption>Figure 6. Live filter. Only words from this project's 317-entry dataset are shown, each with its Bengali form, its romanised spelling and how many times it occurs.</figcaption>
   </figure>
-
-  <div class="prose">
-    <p>Look at what survives. <span lang="bn">শহরটা</span> ('the town') and <span lang="bn">শহরটাকে</span> carry a classifier and a case ending, so they are no longer bare nouns, which is what a content word should look like after filtering. But <span lang="bn">একটা</span> is a classifier form that ought to go and is not on the list, and <span lang="bn">গেল</span> ('went') and <span lang="bn">মনে</span> (as in <span lang="bn">মনে হওয়া</span>, 'to seem') behave much like function words without being listed as such. A stemmer, or a list that includes common suffixed forms, would catch more.</p>
-  </div>
 </section>
 
 <!-- ============================== DISCUSSION ============================== -->
