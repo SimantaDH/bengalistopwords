@@ -742,45 +742,34 @@
 
     function run() {
       var text = ta.value.normalize('NFC');
-      var parts = text.split(WORD), html = '', total = 0, hits = 0, found = [], foundBy = {};
-      function mark(shown, entries, tokens) {
-        hits += tokens;
+      // Only words that belong to the 317-entry dataset are ever shown.
+      // Every other word in the input is skipped and never displayed.
+      var parts = text.split(WORD), hits = 0, found = [], foundBy = {};
+      function mark(entries) {
+        hits++;
         var key = entries.map(function (e) { return e.roman; }).join(' / ');
         if (!foundBy[key]) { foundBy[key] = { entries: entries, n: 0 }; found.push(foundBy[key]); }
         foundBy[key].n++;
-        html += '<span class="sw" title="From the list: ' + esc(key) + '">' + esc(shown) + '</span>';
       }
-      for (var i = 0; i < parts.length; i++) {
-        var p = parts[i];
-        if (i % 2 === 0) { html += esc(p); continue; }
-        total++;
-        var w = p.toLowerCase();
+      for (var i = 1; i < parts.length; i += 2) {
+        var w = parts[i].toLowerCase();
         // two-word entries such as "sathe sathe"
         if (i + 2 < parts.length && /^\s+$/.test(parts[i + 1])) {
           var pair = w + ' ' + parts[i + 2].toLowerCase();
-          if (PHRASES[pair]) {
-            total++;
-            mark(p + parts[i + 1] + parts[i + 2], PHRASES[pair], 2);
-            i += 2; continue;
-          }
+          if (PHRASES[pair]) { mark(PHRASES[pair]); i += 2; continue; }
         }
-        if (LOOKUP[w]) mark(p, LOOKUP[w], 1);
-        else html += esc(p);
+        if (LOOKUP[w]) mark(LOOKUP[w]);
       }
-      var pct = total ? (100 * hits / total) : 0;
-      $('#try-render').innerHTML = html || '<em>Type or paste some Bengali text.</em>';
+      var share = 100 * found.length / ENTRIES.length;
       $('#try-stats').innerHTML =
-        '<span><b>' + total + '</b>tokens</span><span><b>' + hits + '</b>stop words</span><span><b>' + pct.toFixed(1) + '%</b>removed</span>' +
-        '<span class="try-meter" aria-hidden="true"><span style="width:' + pct.toFixed(1) + '%"></span></span>';
-      $('#try-found-label').textContent = found.length
-        ? 'Your stop words found in this text: ' + found.length + ' of the ' + ENTRIES.length + ' entries'
-        : 'Your stop words found in this text';
+        '<span><b>' + hits + '</b>matches</span><span><b>' + found.length + '</b>of the ' + ENTRIES.length + ' stop words</span>' +
+        '<span class="try-meter" aria-hidden="true"><span style="width:' + share.toFixed(1) + '%"></span></span>';
       $('#try-found').innerHTML = found.length ? found.map(function (f) {
         var bn = f.entries[0].bengali;
         return '<span>' + (bn ? '<b lang="bn">' + esc(bn) + '</b>' : '') +
           '<i>' + esc(f.entries.map(function (e) { return e.roman; }).join(' / ')) + '</i>' +
           (f.n > 1 ? '<small>×' + f.n + '</small>' : '') + '</span>';
-      }).join('') : '<em>None of the 317 stop words appears in this text.</em>';
+      }).join('') : '<em>' + (text.trim() ? 'None of the 317 stop words appears in this text.' : 'Type or paste some Bengali text.') + '</em>';
     }
     var t;
     ta.addEventListener('input', function () { clearTimeout(t); t = setTimeout(run, 120); });
